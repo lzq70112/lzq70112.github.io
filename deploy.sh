@@ -14,10 +14,10 @@ echo 'hongwei888.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:lzq70112/mysite.git
+  githubUrl=git@github.com:lzq70112/lzq70112.github.io
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://lzq70112:${GITHUB_TOKEN}@github.com/lzq70112/mysite.git
+  githubUrl=https://lzq70112:${GITHUB_TOKEN}@github.com/lzq70112/lzq70112.github.io.git
   git config --global user.name "lzq70112"
   git config --global user.email "498510210@qq.com"
 fi
@@ -25,7 +25,10 @@ git init
 git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
-
+echo 'xugaoyi.com' > CNAME
+git add -A
+git commit -m 'deploy'
+git push -f git@e.coding.net:hongwei888/mystie/mystie.git master # 发布到coding
 # deploy to coding pages
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
 # echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件

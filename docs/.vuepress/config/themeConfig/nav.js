@@ -2,25 +2,21 @@
 module.exports = [
   { text: '首页', link: '/' },
   {
-    text: '前端',
-    link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    text: '运维',
+    link: '/Operation/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
       {
-        text: '前端文章',
+        text: '运维',
         items: [
-          { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+          { text: 'JavaScript', link: '/pages/8/' },
           { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
         ],
       },
       {
         text: '学习笔记',
         items: [
-          { text: '《JavaScript教程》笔记', link: '/note/javascript/' },
-          { text: '《JavaScript高级程序设计》笔记', link: '/note/js/' },
-          { text: '《ES6 教程》笔记', link: '/note/es6/' },
-          { text: '《Vue》笔记', link: '/note/vue/' },
-          { text: '《React》笔记', link: '/note/react/' },
+          { text: 'nginx笔记', link: '/note/nginx/' },
           {
             text: '《TypeScript 从零实现 axios》',
             link: '/note/typescript-axios/',
@@ -42,8 +38,16 @@ module.exports = [
     ],
   },
   {
-    text: '页面',
-    link: '/ui/',
+    text: '开发',
+    link: '/Develop/',
+    items: [
+      { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
+      { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+    ],
+  },
+  {
+    text: '踩坑',
+    link: '/more/',
     items: [
       { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
       { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
@@ -59,17 +63,7 @@ module.exports = [
       { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
     ],
   },
-  {
-    text: '更多',
-    link: '/more/',
-    items: [
-      { text: '学习', link: '/pages/f2a556/' },
-      { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-      { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-      { text: '实用技巧', link: '/pages/baaa02/' },
-      { text: '友情链接', link: '/friends/' },
-    ],
-  },
+  { text: '友情链接', link: '/friends/' },
   { text: '关于', link: '/about/' },
   {
     text: '收藏',
@@ -89,4 +83,5 @@ module.exports = [
       { text: '归档', link: '/archives/' },
     ],
   },
+  { text: '镜像', link: 'http://m.eryajf.net' },
 ]
