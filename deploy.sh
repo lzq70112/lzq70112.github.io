@@ -25,9 +25,10 @@ git init
 git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
-echo 'xugaoyi.com' > CNAME
+
+git init
 git add -A
-git commit -m 'deploy'
+git commit -m "${msg}"
 git push -f git@e.coding.net:hongwei888/mystie/mystie.git master # 发布到coding
 # deploy to coding pages
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名

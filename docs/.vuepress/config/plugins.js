@@ -85,7 +85,7 @@ module.exports = [
       options: {
         clientID: '2b53adf0724a6dabe1fd',
         clientSecret: '7969235e730cee11cfa592dcbc8362304c1a8fdd',
-        repo: 'blog-gitalk-comment', // GitHub 仓库
+        repo: 'lzq70112.github.io', // GitHub 仓库
         owner: 'lzq70112', // GitHub仓库所有者
         admin: ['lzq70112'], // 对仓库有写权限的人
         // distractionFreeMode: true,
