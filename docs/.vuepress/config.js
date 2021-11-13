@@ -11,6 +11,8 @@ module.exports = {
   // base: '/', // 格式：'/<仓库名>/'， 默认'/'
   markdown: {
     lineNumbers: true, // 代码行号
+	externalLinks:
+	  { target: '_blank', rel: 'nofollow noopener noreferrer' }
   },
   
 

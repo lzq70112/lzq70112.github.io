@@ -107,4 +107,11 @@ module.exports = [
       },
     },
   ],
+  ['sitemap',
+    {
+      hostname: "https://hongwei888.com",
+      // 排除无实际内容的页面
+      exclude: ["/404.html"]
+    },
+  ],
 ]

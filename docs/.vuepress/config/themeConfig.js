@@ -82,7 +82,7 @@ module.exports = {
     // 页脚信息
     createYear: 2019, // 博客创建年份
     copyrightInfo:
-      'xiongmao | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      'xiongmao | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank" rel="nofollow">MIT License</a> <a href="https://hongwei888.com/sitemap.xml" target="_blank">站点地图</a>',	  // 博客版权信息，支持a标签
   },
   htmlModules // 插入hmtl(广告)模块
 }
